@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC45BBC727398FF6008F1745 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBC627398FF6008F1745 /* SectionView.swift */; };
+		AC45BBCB27399234008F1745 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBCA27399234008F1745 /* CellView.swift */; };
+		AC45BBCD273993E9008F1745 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBCC273993E9008F1745 /* PlayerView.swift */; };
+		AC45BBD1273994F1008F1745 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBD0273994F1008F1745 /* PlayerViewController.swift */; };
+		AC45BBD327399726008F1745 /* VideoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBD227399726008F1745 /* VideoTableTableViewController.swift */; };
+		AC45BBD52739D0DE008F1745 /* SectionTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBD42739D0DE008F1745 /* SectionTableViewHeader.swift */; };
+		AC45BBD72739D592008F1745 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45BBD62739D592008F1745 /* CellTableViewCell.swift */; };
+		ACA97D2F273941E1001416D1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA97D2E273941E1001416D1 /* HeaderView.swift */; };
+		ACA97D31273945EB001416D1 /* MainVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA97D30273945EB001416D1 /* MainVideoViewController.swift */; };
 		C25A8AB62472C3A100050654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A8AB52472C3A100050654 /* AppDelegate.swift */; };
 		C25A8AB82472C3A100050654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A8AB72472C3A100050654 /* SceneDelegate.swift */; };
 		C25A8ABA2472C3A100050654 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25A8AB92472C3A100050654 /* TableView.swift */; };
@@ -22,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC45BBC627398FF6008F1745 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		AC45BBCA27399234008F1745 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		AC45BBCC273993E9008F1745 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		AC45BBD0273994F1008F1745 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		AC45BBD227399726008F1745 /* VideoTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableTableViewController.swift; sourceTree = "<group>"; };
+		AC45BBD42739D0DE008F1745 /* SectionTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewHeader.swift; sourceTree = "<group>"; };
+		AC45BBD62739D592008F1745 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		ACA97D2E273941E1001416D1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ACA97D30273945EB001416D1 /* MainVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVideoViewController.swift; sourceTree = "<group>"; };
 		C25A8AB22472C3A100050654 /* StretchyHeaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHeaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25A8AB52472C3A100050654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C25A8AB72472C3A100050654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC45BBCE273994A9008F1745 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC45BBCC273993E9008F1745 /* PlayerView.swift */,
+				ACA97D2E273941E1001416D1 /* HeaderView.swift */,
+				AC45BBC627398FF6008F1745 /* SectionView.swift */,
+				AC45BBCA27399234008F1745 /* CellView.swift */,
+				AC45BBD42739D0DE008F1745 /* SectionTableViewHeader.swift */,
+				AC45BBD62739D592008F1745 /* CellTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC45BBCF273994BA008F1745 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC45BBD0273994F1008F1745 /* PlayerViewController.swift */,
+				AC45BBD227399726008F1745 /* VideoTableTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACA97D2D273941A9001416D1 /* PlayerVideoPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				AC45BBCF273994BA008F1745 /* Controller */,
+				AC45BBCE273994A9008F1745 /* View */,
+				ACA97D30273945EB001416D1 /* MainVideoViewController.swift */,
+			);
+			path = PlayerVideoPlaylist;
+			sourceTree = "<group>";
+		};
 		C25A8AA92472C3A100050654 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +118,7 @@
 		C25A8AB42472C3A100050654 /* StretchyHeaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				ACA97D2D273941A9001416D1 /* PlayerVideoPlaylist */,
 				C27BA0B22475868B00F82E6D /* ScrollView */,
 				C27BA0B12475867700F82E6D /* CollectionView */,
 				C27BA0B02475866B00F82E6D /* TableView */,
@@ -181,14 +232,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27BA0B6247591B600F82E6D /* CollectionViewFlowLayout.swift in Sources */,
+				ACA97D31273945EB001416D1 /* MainVideoViewController.swift in Sources */,
 				C28BBFA324754D36008D6745 /* StretchyCollectionHeaderView.swift in Sources */,
 				C25A8ABA2472C3A100050654 /* TableView.swift in Sources */,
+				AC45BBD327399726008F1745 /* VideoTableTableViewController.swift in Sources */,
+				AC45BBD52739D0DE008F1745 /* SectionTableViewHeader.swift in Sources */,
 				C28BBFA124754262008D6745 /* CollectionView.swift in Sources */,
 				C25A8ACA2472C44600050654 /* StretchyTableHeaderView.swift in Sources */,
+				ACA97D2F273941E1001416D1 /* HeaderView.swift in Sources */,
 				C25A8AB62472C3A100050654 /* AppDelegate.swift in Sources */,
+				AC45BBD72739D592008F1745 /* CellTableViewCell.swift in Sources */,
+				AC45BBC727398FF6008F1745 /* SectionView.swift in Sources */,
+				AC45BBCD273993E9008F1745 /* PlayerView.swift in Sources */,
+				AC45BBCB27399234008F1745 /* CellView.swift in Sources */,
 				C25A8AB82472C3A100050654 /* SceneDelegate.swift in Sources */,
 				C27BA0B8247599C600F82E6D /* MainViewController.swift in Sources */,
 				C27BA0BA2475A02600F82E6D /* ScrollView.swift in Sources */,
+				AC45BBD1273994F1008F1745 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

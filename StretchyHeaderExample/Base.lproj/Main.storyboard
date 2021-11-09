@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fh-54-gcK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fh-54-gcK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="B2E-xU-6f6">
-                                <rect key="frame" x="107" y="280.5" width="200" height="213"/>
+                                <rect key="frame" x="65.5" y="241" width="283" height="292"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQA-d3-I9G">
-                                        <rect key="frame" x="25" y="0.0" width="150" height="55"/>
+                                        <rect key="frame" x="66.5" y="0.0" width="150" height="55"/>
                                         <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="iPp-1A-bM7"/>
@@ -33,8 +35,22 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="UMW-o3-nTG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jap-kH-dk3">
+                                        <rect key="frame" x="0.0" y="79" width="283" height="55"/>
+                                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Xh6-mm-jEg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="TableView Programmaticaly" image="tableview"/>
+                                        <connections>
+                                            <segue destination="hcF-O3-0v3" kind="show" id="Mpo-m5-GiX"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQj-F0-6Ba">
-                                        <rect key="frame" x="0.0" y="79" width="200" height="55"/>
+                                        <rect key="frame" x="41.5" y="158" width="200" height="55"/>
                                         <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="qsC-qn-eTZ"/>
@@ -48,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mru-d1-6GM">
-                                        <rect key="frame" x="10" y="158" width="180" height="55"/>
+                                        <rect key="frame" x="51.5" y="237" width="180" height="55"/>
                                         <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="Tqv-6r-JZw"/>
@@ -64,12 +80,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Hf-VW-AdZ"/>
                         <color key="backgroundColor" red="0.73725490196078436" green="0.13333333333333333" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="B2E-xU-6f6" firstAttribute="centerX" secondItem="5Hf-VW-AdZ" secondAttribute="centerX" id="OFK-ol-esm"/>
                             <constraint firstItem="B2E-xU-6f6" firstAttribute="centerY" secondItem="5Hf-VW-AdZ" secondAttribute="centerY" id="mxe-zj-ADC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Hf-VW-AdZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="StretchyHeaderExample" id="I9J-rE-1e7"/>
                 </viewController>
@@ -87,13 +103,14 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FG8-6l-j8X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="EmZ-ft-OeT"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="suI-zy-I79"/>
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FG8-6l-j8X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GpT-hO-Obp"/>
@@ -101,7 +118,6 @@
                             <constraint firstAttribute="bottom" secondItem="FG8-6l-j8X" secondAttribute="bottom" id="m4K-RX-l0y"/>
                             <constraint firstItem="FG8-6l-j8X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nsc-Of-Aei"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Stretchy Header - TableView" id="XX6-nA-saD"/>
                     <connections>
@@ -110,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="-218"/>
+            <point key="canvasLocation" x="1370" y="-659"/>
         </scene>
         <!--Stretchy Header - CollectionView-->
         <scene sceneID="8ER-Ds-PFt">
@@ -143,14 +159,14 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0zb-J1-FbH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ygN-WE-SjJ" secondAttribute="bottom" id="S8q-C6-Z7Y"/>
                             <constraint firstItem="ygN-WE-SjJ" firstAttribute="leading" secondItem="0zb-J1-FbH" secondAttribute="leading" id="ScG-6Z-3zI"/>
                             <constraint firstItem="ygN-WE-SjJ" firstAttribute="top" secondItem="fip-yZ-iSh" secondAttribute="top" id="krk-PV-glx"/>
                             <constraint firstItem="ygN-WE-SjJ" firstAttribute="trailing" secondItem="0zb-J1-FbH" secondAttribute="trailing" id="pTZ-Ob-jqI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0zb-J1-FbH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Stretchy Header - CollectionView" id="1sf-O0-t9Q"/>
                     <connections>
@@ -159,17 +175,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aog-CG-dfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.768115942029" y="452.67857142857139"/>
+            <point key="canvasLocation" x="1417" y="725"/>
         </scene>
         <!--Scroll View-->
         <scene sceneID="fGm-0r-3rm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9AT-R8-tuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="eXv-ph-E8L" customClass="ScrollView" customModule="StretchyHeaderExample" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xiX-JS-VZS"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AT-R8-tuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202.898550724638" y="527.67857142857144"/>
+            <point key="canvasLocation" x="1406" y="1513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hnk-4v-SLp">
@@ -193,11 +209,30 @@
             </objects>
             <point key="canvasLocation" x="-716" y="398"/>
         </scene>
+        <!--Main Video View Controller-->
+        <scene sceneID="F1h-Fe-vnV">
+            <objects>
+                <viewController id="hcF-O3-0v3" customClass="MainVideoViewController" customModule="StretchyHeaderExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="she-6N-tZM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6oZ-E4-fzm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfb-W2-DvW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crk-Oa-Dbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="23"/>
+        </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="collectionview" width="25" height="25"/>
         <image name="scrollview" width="25" height="25"/>
         <image name="tableview" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
